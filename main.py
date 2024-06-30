@@ -1,5 +1,5 @@
 def palindrome_check(word):
-    for i in range(0,len(word)):
+    for i in range(0,len(word)//2):
         if word[i] != word[-i-1]:
             return False
     else:
@@ -7,7 +7,7 @@ def palindrome_check(word):
 
 words = [
     "potop",
-    "obiad"
+    "obiady"
     ]
 
 for word in words:
