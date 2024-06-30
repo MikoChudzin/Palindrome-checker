@@ -1,5 +1,9 @@
 def palindrome_check(word):
-    pass
+    for i in range(0,len(word)):
+        if word[i] != word[-i-1]:
+            return False
+    else:
+        return True    
 
 words = [
     "potop",
