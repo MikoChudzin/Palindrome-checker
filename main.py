@@ -1,6 +1,7 @@
 def palindrome_check(word):
     """
-    Checks if passed argument is a palindrome
+    Checks if passed argument is a palindrome,
+    regardless of capitalisation, spaces or special characters
     Arguments:
     str word
     """
