@@ -12,7 +12,9 @@ def palindrome_check(word):
 
 words = [
     "potop",
-    "obiady"
+    "obiady",
+    "Kobyła ma mały bok",
+    "ilu beczy z cebuli?"
     ]
 
 for word in words:
