@@ -4,7 +4,7 @@ def palindrome_check(word):
     Arguments:
     str word
     """
-    word = (word.casefold()).replace(" ","")
+    word = "".join(char.casefold() for char in word if char.isalpha())
     for i in range(0,len(word)//2):
         if word[i] != word[-i-1]:
             return False
@@ -14,9 +14,10 @@ def palindrome_check(word):
 words = [
     "potop",
     "obiady",
-    "Kobyła ma mały bok",
+    "Anna",
+    "kobyła ma mały bok",
     "ilu beczy z cebuli?"
     ]
 
 for word in words:
-    print(f"Is {word} a palindrome? {palindrome_check(word)}")
+    print(f'Is "{word}" a palindrome? {palindrome_check(word)}')
