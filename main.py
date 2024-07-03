@@ -4,6 +4,7 @@ def palindrome_check(word):
     Arguments:
     str word
     """
+    word = (word.casefold()).replace(" ","")
     for i in range(0,len(word)//2):
         if word[i] != word[-i-1]:
             return False
