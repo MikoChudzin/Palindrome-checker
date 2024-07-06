@@ -5,7 +5,7 @@ def palindrome_check(word):
     Arguments:
     str word
     """
-    word = "".join(char.casefold() for char in word if char.isalpha())
+    word = "".join(char.lower() for char in word if char.isalpha())
     for i in range(0,len(word)//2):
         if word[i] != word[-i-1]:
             return False
